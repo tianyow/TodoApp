@@ -16,22 +16,35 @@ struct ContentView: View {
   // MARK: - BODY
     var body: some View {
       NavigationView {
-        List(0 ..< 15) { item in
-          Text("Hello, World!")
-        } //: LIST
-          .navigationBarTitle("Todo", displayMode: .inline)
-          .navigationBarItems(trailing:
-            Button(action: {
-              self.showingAddTodoView.toggle()
-            }) {
-              Image(systemName: "plus")
-            } //: ADD BUTTON
-              .sheet(isPresented: $showingAddTodoView) {
-                AddTodoView()
+        VStack(spacing: 25) {
+            NavigationLink(destination: XView()) {
+                Text("Open ContentView")
             }
-        
-        )
+            List(0 ..< 15) { item in
+              Text("Hello, World!")
+            } //: LIST
+              .navigationBarTitle("Todo", displayMode: .inline)
+              .navigationBarItems(trailing:
+                Button(action: {
+                  self.showingAddTodoView.toggle()
+                }) {
+                  Image(systemName: "plus")
+                } //: ADD BUTTON
+                  .sheet(isPresented: $showingAddTodoView) {
+                    AddTodoView()
+                }
+            
+            )
+        }
       } //: NAVIGATION
+    }
+}
+struct XView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "person.crop.circle").imageScale(.large)
+            Text("TEST").font(.largeTitle)
+        }
     }
 }
 
