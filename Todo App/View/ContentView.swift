@@ -20,40 +20,42 @@ struct ContentView: View {
   // MARK: - BODY
     var body: some View {
       NavigationView {
-        VStack(spacing: 25) {
-            NavigationLink(destination: XView()) {
-                Text("Open ContentView")
-            }
+        ZStack {
           List {
-            ForEach(self.todos, id: \.self) { todo in
-              HStack {
-                Text(todo.name ?? "Unknown")
-                
-                Spacer()
-                
-                  Text(todo.priority ?? "Unknown")
+          ForEach(self.todos, id: \.self) { todo in
+            HStack {
+              Text(todo.name ?? "Unknown")
+              
+              Spacer()
+              
+                Text(todo.priority ?? "Unknown")
+            }
+          } //: FOREACH
+          .onDelete(perform: deleteTodo)
+          } //: LIST
+            .navigationBarTitle("Todo", displayMode: .inline)
+            .navigationBarItems(
+              leading: EditButton(),
+              trailing:
+              Button(action: {
+                self.showingAddTodoView.toggle()
+              }) {
+                Image(systemName: "plus")
+              } //: ADD BUTTON
+                .sheet(isPresented: $showingAddTodoView) {
+                  AddTodoView().environment(\.managedObjectContext, self.managedObjectContext)
               }
-            } //: FOREACH
-            .onDelete(perform: deleteTodo)
-            } //: LIST
-              .navigationBarTitle("Todo", displayMode: .inline)
-              .navigationBarItems(
-                leading: EditButton(),
-                trailing:
-                Button(action: {
-                  self.showingAddTodoView.toggle()
-                }) {
-                  Image(systemName: "plus")
-                } //: ADD BUTTON
-                  .sheet(isPresented: $showingAddTodoView) {
-                    AddTodoView().environment(\.managedObjectContext, self.managedObjectContext)
-                }
-            
-            )
-        }
+          )
+          // MARK: - NO TODO ITEMS
+             if todos.count == 0 {
+               EmptyListView()
+             }
+        } //: ZSTACK
       } //: NAVIGATION
     }
-  
+//  NavigationLink(destination: XView()) {
+//      Text("Open ContentView")
+//  }
   // MARK: FUNCTIONS
   
   private func deleteTodo(at offsets: IndexSet) {

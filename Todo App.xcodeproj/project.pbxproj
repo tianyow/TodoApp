@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C898F832607015F0047DD11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487625B488B600C86289 /* AppDelegate.swift */; };
+		8C898F85260793930047DD11 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C898F84260793930047DD11 /* EmptyListView.swift */; };
 		8CB7487925B488B600C86289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487825B488B600C86289 /* SceneDelegate.swift */; };
 		8CB7487C25B488B600C86289 /* Todo_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487A25B488B600C86289 /* Todo_App.xcdatamodeld */; };
 		8CB7487E25B488B600C86289 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487D25B488B600C86289 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C898F84260793930047DD11 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		8CB7487325B488B600C86289 /* Todo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB7487625B488B600C86289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CB7487825B488B600C86289 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				8CB7487D25B488B600C86289 /* ContentView.swift */,
 				8CB7488E25B48DBF00C86289 /* AddTodoView.swift */,
+				8C898F84260793930047DD11 /* EmptyListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				8CB7487925B488B600C86289 /* SceneDelegate.swift in Sources */,
 				8CB7487E25B488B600C86289 /* ContentView.swift in Sources */,
+				8C898F85260793930047DD11 /* EmptyListView.swift in Sources */,
 				8CB7487C25B488B600C86289 /* Todo_App.xcdatamodeld in Sources */,
 				8C898F832607015F0047DD11 /* AppDelegate.swift in Sources */,
 				8CB7488F25B48DBF00C86289 /* AddTodoView.swift in Sources */,
