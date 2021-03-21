@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8CB7487725B488B600C86289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487625B488B600C86289 /* AppDelegate.swift */; };
+		8C898F832607015F0047DD11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487625B488B600C86289 /* AppDelegate.swift */; };
 		8CB7487925B488B600C86289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487825B488B600C86289 /* SceneDelegate.swift */; };
 		8CB7487C25B488B600C86289 /* Todo_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487A25B488B600C86289 /* Todo_App.xcdatamodeld */; };
 		8CB7487E25B488B600C86289 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487D25B488B600C86289 /* ContentView.swift */; };
@@ -160,10 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB7487725B488B600C86289 /* AppDelegate.swift in Sources */,
 				8CB7487925B488B600C86289 /* SceneDelegate.swift in Sources */,
 				8CB7487E25B488B600C86289 /* ContentView.swift in Sources */,
 				8CB7487C25B488B600C86289 /* Todo_App.xcdatamodeld in Sources */,
+				8C898F832607015F0047DD11 /* AppDelegate.swift in Sources */,
 				8CB7488F25B48DBF00C86289 /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
