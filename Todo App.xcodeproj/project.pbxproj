@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6B1147260D77B70056C0A5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B1146260D77B70056C0A5 /* SettingsView.swift */; };
+		8C6B1149260D82960056C0A5 /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B1148260D82960056C0A5 /* FormRowStaticView.swift */; };
 		8C898F832607015F0047DD11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487625B488B600C86289 /* AppDelegate.swift */; };
 		8C898F85260793930047DD11 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C898F84260793930047DD11 /* EmptyListView.swift */; };
 		8CB7487925B488B600C86289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7487825B488B600C86289 /* SceneDelegate.swift */; };
@@ -16,9 +18,12 @@
 		8CB7488325B488BC00C86289 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB7488225B488BC00C86289 /* Preview Assets.xcassets */; };
 		8CB7488625B488BC00C86289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB7488425B488BC00C86289 /* LaunchScreen.storyboard */; };
 		8CB7488F25B48DBF00C86289 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7488E25B48DBF00C86289 /* AddTodoView.swift */; };
+		8CFD0763260D91A000B0EA94 /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFD0762260D91A000B0EA94 /* FormRowLinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C6B1146260D77B70056C0A5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8C6B1148260D82960056C0A5 /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
 		8C898F84260793930047DD11 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		8CB7487325B488B600C86289 /* Todo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB7487625B488B600C86289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		8CB7488525B488BC00C86289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CB7488725B488BC00C86289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CB7488E25B48DBF00C86289 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
+		8CFD0762260D91A000B0EA94 /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 				8CB7487D25B488B600C86289 /* ContentView.swift */,
 				8CB7488E25B48DBF00C86289 /* AddTodoView.swift */,
 				8C898F84260793930047DD11 /* EmptyListView.swift */,
+				8C6B1146260D77B70056C0A5 /* SettingsView.swift */,
+				8C6B1148260D82960056C0A5 /* FormRowStaticView.swift */,
+				8CFD0762260D91A000B0EA94 /* FormRowLinkView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6B1147260D77B70056C0A5 /* SettingsView.swift in Sources */,
+				8C6B1149260D82960056C0A5 /* FormRowStaticView.swift in Sources */,
+				8CFD0763260D91A000B0EA94 /* FormRowLinkView.swift in Sources */,
 				8CB7487925B488B600C86289 /* SceneDelegate.swift in Sources */,
 				8CB7487E25B488B600C86289 /* ContentView.swift in Sources */,
 				8C898F85260793930047DD11 /* EmptyListView.swift in Sources */,
