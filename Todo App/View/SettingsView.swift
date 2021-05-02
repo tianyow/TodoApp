@@ -17,7 +17,7 @@ struct SettingsView: View {
   // THEME
   
   let themes: [Theme] = themeData
-  @ObservedObject var theme = ThemeSettings()
+  @ObservedObject var theme = ThemeSettings.shared
   @State private var isThemeChanged: Bool = false
   
   // MARK: - BODY
@@ -114,7 +114,7 @@ struct SettingsView: View {
               .alert(isPresented: $isThemeChanged) {
                 Alert(
                   title: Text("Success!"),
-                  message: Text("已更換背景主題為\(themes[self.theme.themeSettings].themeName).\n 請重新啟動APP.").font(.callout),
+                  message: Text("已更換背景主題為\(themes[self.theme.themeSettings].themeName)!").font(.callout),
                   dismissButton: .default(Text("OK"))
                 )
             }
